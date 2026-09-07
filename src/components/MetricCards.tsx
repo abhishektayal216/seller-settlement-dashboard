@@ -1,4 +1,3 @@
-import React from 'react';
 import { SummaryMetrics } from '../types';
 import { IndianRupee, TrendingDown, Percent, RotateCcw, Landmark, Receipt } from 'lucide-react';
 

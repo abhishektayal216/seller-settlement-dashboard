@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import { UploadZone } from './components/UploadZone';
 import { MetricCards } from './components/MetricCards';
 import { FeeChart } from './components/FeeChart';

@@ -1,5 +1,5 @@
-import React, { useCallback, useState } from 'react';
-import { Upload, FileSpreadsheet, AlertCircle } from 'lucide-react';
+import { useCallback, useState } from 'react';
+import { Upload, AlertCircle } from 'lucide-react';
 
 interface Props {
   onFilesParsed: (results: { platform: string; transactions: any[]; fileName: string }[]) => void;

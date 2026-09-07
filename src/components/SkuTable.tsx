@@ -1,4 +1,3 @@
-import React from 'react';
 import { SkuPerformance } from '../types';
 
 interface Props {
