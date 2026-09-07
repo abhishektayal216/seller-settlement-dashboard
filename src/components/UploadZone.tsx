@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react';
+import { useCallback, useState, type DragEvent } from 'react';
 import { Upload, AlertCircle } from 'lucide-react';
 
 interface Props {
@@ -32,7 +32,7 @@ export function UploadZone({ onFilesParsed, loading }: Props) {
     if (results.length > 0) onFilesParsed(results);
   }, [onFilesParsed]);
 
-  const onDrop = (e: React.DragEvent) => {
+  const onDrop = (e: DragEvent<HTMLDivElement>) => {
     e.preventDefault();
     setDrag(false);
     handleFiles(e.dataTransfer.files);
